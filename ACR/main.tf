@@ -3,14 +3,6 @@ provider "azurerm" {
     features {}
 }
 ##comment
-terraform {
-    backend "azurerm" {
-        resource_group_name = "tfstate"
-        storage_account_name = "gfaccount"
-        containter_name = "gftfcontainer.tfstate"
-    }
-
-}
 
 data "azurerm_client_config" "current" {}
 
